@@ -17,6 +17,6 @@ intenting, and more.
 ### NeoBundle (Recommended)
 1. Add the following configuration to your `.vimrc`.
 
-NeoBundle 'toyamarinyon/vim-swift'
+        NeoBundle 'toyamarinyon/vim-swift'
 
 2. Install with `:NeoBundleInstall`.
