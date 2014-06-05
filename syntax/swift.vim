@@ -25,7 +25,7 @@ syntax keyword swiftDeclarationKeywords class deinit enum extension func import 
 highlight link swiftDeclarationKeywords Keyword
 " Keywords used in statements:
 syntax keyword swiftStatementKeywords break case continue default do else fallthrough if in for return switch where while
-highlight link swiftDeclarationKeywords Keyword
+highlight link swiftStatementKeywords Keyword
 " Keywords used in expressions and types:
 syntax keyword swiftExpressionTypeKeywords as dynamicType is new super self Self Type __COLUMN__ __FILE__ __FUNCTION__ __LINE__
 highlight link swiftExpressionTypeKeywords Keyword
