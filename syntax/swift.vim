@@ -15,7 +15,7 @@ highlight link swiftComment Comment
 " }}}
 
 " {{{ Identifiers
-syntax match swiftIdentifer /[a-zA-Z_][a-zA-Z_0-9]*/
+syntax match swiftIdentifer /[[:alpha:]_][[:alnum:]_]*/
 highlight link swiftIdentifer Identifier
 " }}}
 
@@ -51,7 +51,7 @@ highlight link swiftOperatorKeywords Operator
 " }}}
 
 " {{{ Type
-syntax match swiftTypeIdentifier /[a-zA-Z_][a-zA-Z_0-9\.]*/ contained
+syntax match swiftTypeIdentifier /\<[[:alpha:]_][[:alnum:]_.]*/ contained
 syntax match swiftType /: .*/ contains=swiftTypeIdentifier
 highlight link swiftType Operator
 highlight link swiftTypeIdentifier Type
