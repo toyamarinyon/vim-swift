@@ -36,9 +36,11 @@ highlight link swiftReserveKeywords Keyword
 
 " {{{ Literals
 " Integer literal
-syntax match swiftIntegerLiteral /\<[0-9a-fA-F\.]\+\>/
-syntax match swiftIntegerLiteral /\<0x[0-9]\+\>/
-syntax match swiftIntegerLiteral /\<0o[0-9]\+\>/
+syntax match swiftIntegerLiteral /\<\d\+\%(_\d\+\)*\%(\.\d\+\%(_\d\+\)*\)\=\>/
+syntax match swiftIntegerLiteral /\<\d\+\%(_\d\+\)*\%(\.\d\+\%(_\d\+\)*\)\=\%([eE][-+]\=\d\+\%(_\d\+\)*\)\>/
+syntax match swiftIntegerLiteral /\<0x\x\+\%(_\x\+\)*\>/
+syntax match swiftIntegerLiteral /\<0o\o\+\%(_\o\+\)*\>/
+syntax match swiftIntegerLiteral /\<0b[01]\+\%(_[01]\+\)*\>/
 highlight link swiftIntegerLiteral Number
 " String literal
 syntax region swiftStringLiteral start=/"/ skip=/\\"/ end=/"/
