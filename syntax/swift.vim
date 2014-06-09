@@ -15,8 +15,8 @@ highlight link swiftComment Comment
 " }}}
 
 " {{{ Identifiers
-syntax match swiftIdentifer /[[:alpha:]_][[:alnum:]_]*/
-highlight link swiftIdentifer Identifier
+syntax match swiftIdentifier /[[:alpha:]_][[:alnum:]_]*/
+highlight link swiftIdentifier Identifier
 " }}}
 
 " {{{ Keywords
