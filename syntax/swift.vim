@@ -11,27 +11,27 @@ endif
 " {{{ Whitespace and Comments
 syntax region swiftComment start=#\/\*# end=#\*\/#
 syntax match swiftComment /\/\/.*/
-highlight link swiftComment Comment
+highlight default link swiftComment Comment
 " }}}
 
 " {{{ Identifiers
 syntax match swiftIdentifier /[[:alpha:]_][[:alnum:]_]*/
-highlight link swiftIdentifier Identifier
+highlight default link swiftIdentifier Identifier
 " }}}
 
 " {{{ Keywords
 " Keywords used in declarations:
 syntax keyword swiftDeclarationKeywords class deinit enum extension func import init let protocol static struct subscript typealias var
-highlight link swiftDeclarationKeywords Keyword
+highlight default link swiftDeclarationKeywords Keyword
 " Keywords used in statements:
 syntax keyword swiftStatementKeywords break case continue default do else fallthrough if in for return switch where while
-highlight link swiftStatementKeywords Keyword
+highlight default link swiftStatementKeywords Keyword
 " Keywords used in expressions and types:
 syntax keyword swiftExpressionTypeKeywords as dynamicType is new super self Self Type __COLUMN__ __FILE__ __FUNCTION__ __LINE__
-highlight link swiftExpressionTypeKeywords Keyword
+highlight default link swiftExpressionTypeKeywords Keyword
 " Keywords reserved in particular contexts:
 syntax keyword swiftReserveKeywords associativity didSet get infix inout left mutating none nonmutating operator override postfix precedence prefix right set unowned unowned(safe) unowned(unsafe) weak willSet
-highlight link swiftReserveKeywords Keyword
+highlight default link swiftReserveKeywords Keyword
 " }}}
 
 " {{{ Literals
@@ -41,22 +41,22 @@ syntax match swiftIntegerLiteral /\<\d\+\%(_\d\+\)*\%(\.\d\+\%(_\d\+\)*\)\=\%([e
 syntax match swiftIntegerLiteral /\<0x\x\+\%(_\x\+\)*\>/
 syntax match swiftIntegerLiteral /\<0o\o\+\%(_\o\+\)*\>/
 syntax match swiftIntegerLiteral /\<0b[01]\+\%(_[01]\+\)*\>/
-highlight link swiftIntegerLiteral Number
+highlight default link swiftIntegerLiteral Number
 " String literal
 syntax region swiftStringLiteral start=/"/ skip=/\\"/ end=/"/
-highlight link swiftStringLiteral String
+highlight default link swiftStringLiteral String
 " }}}
 
 " {{{ Operators
 syntax keyword swiftOperatorKeywords / = - + ! * % < > & \| ^ ~ .
-highlight link swiftOperatorKeywords Operator
+highlight default link swiftOperatorKeywords Operator
 " }}}
 
 " {{{ Type
 syntax match swiftTypeIdentifier /\<[[:alpha:]_][[:alnum:]_.]*/ contained
 syntax match swiftType /: .*/ contains=swiftTypeIdentifier
-highlight link swiftType Operator
-highlight link swiftTypeIdentifier Type
+highlight default link swiftType Operator
+highlight default link swiftTypeIdentifier Type
 " }}}
 
 if !exists('b:current_syntax')
