@@ -5,7 +5,7 @@ Description
 -----------------
 
 This project adds [Swift] support to vim. It covers syntax,
-intenting, and more.
+indenting, and more.
 
 [Swift]: https://developer.apple.com/swift/
 
