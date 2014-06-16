@@ -14,6 +14,12 @@ indenting, and more.
 ### Manually
 1. Put all files under $VIM.
 
+### Pathogen
+1. If you prefer to install plugins using [Pathogen.vim](https://github.com/tpope/vim-pathogen).
+	
+		cd ~/.vim/bundle
+		git clone git://github.com/toyamarinyon/vim-swift.git
+
 ### NeoBundle (Recommended)
 1. Add the following configuration to your `.vimrc`.
 
