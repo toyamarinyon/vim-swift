@@ -24,9 +24,11 @@ highlight default link swiftIdentifier Identifier
 syntax keyword swiftDeclarationKeywords class deinit enum extension func import init internal let operator private protocol public fileprivate internal open static struct subscript typealias var
 highlight default link swiftDeclarationKeywords Keyword
 " Keywords used in statements:
-syntax keyword swiftStatementKeywords break case continue default do else fallthrough if in for return switch where while guard repeat try catch highlight default link swiftStatementKeywords Keyword
+syntax keyword swiftStatementKeywords break case continue default do else fallthrough if in for return switch where while guard repeat try catch
+highlight default link swiftStatementKeywords Keyword
 " Keywords used in expressions and types:
-syntax keyword swiftExpressionTypeKeywords as dynamicType false is nil self Self super true #COLUMN #FILE #FUNCTION #LINE #selector Int UInt Float Double String Bool highlight default link swiftExpressionTypeKeywords Keyword
+syntax keyword swiftExpressionTypeKeywords as dynamicType false is nil self Self super true #COLUMN #FILE #FUNCTION #LINE #selector
+highlight default link swiftExpressionTypeKeywords Keyword
 " Keywords reserved in particular contexts:
 syntax keyword swiftReserveKeywords associativity convenience dynamic didSet final get infix inout lazy left mutating none nonmutating optional override postfix precedence prefix Protocol required right set Type unowned unowned(unsafe) unowned(sale) weak willSet defer @noescape @escape @autoclosure @objc highlight default link swiftReserveKeywords Keyword
 " }}}
